@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: black;
+    color: white;
+} */
+
+.row {
+    max-width: 1770px;
+    margin: auto;
+    width: 80%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .col {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 1rem;
+}
