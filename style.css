@@ -4,19 +4,20 @@
     padding: 0;
 }
 
-/* body {
+body {
     font-family: 'Fredoka', sans-serif;
-    background-color: black;
+    background-color: #0f0e17;
     color: white;
-} */
+}
 
-.row {
+.container {
     max-width: 1770px;
     margin: auto;
     width: 80%;
 }
 
-.row::after {
+.row::after,
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -26,4 +27,24 @@
     float: left;
     width: calc(100% / 3);
     padding: 0 1rem;
+}
+
+.col img {
+    max-width: 100%;
+    height: 200px;
+    /* aspect-ratio: 1/1; */
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1,
+h2 {
+    color: deeppink;
+    margin: 2rem 0;
+}
+
+h3 {
+    color: orange;
 }
